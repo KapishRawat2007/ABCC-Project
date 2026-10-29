@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="600" height="380" rx="16" fill="url(#p4-bg)"/>
+  
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="600" height="42" rx="16" fill="#1e293b"/>
+  <rect x="0" y="30" width="600" height="12" fill="#1e293b"/>
+  <circle cx="24" cy="21" r="6" fill="#ef4444" />
+  <circle cx="44" cy="21" r="6" fill="#eab308" />
+  <circle cx="64" cy="21" r="6" fill="#22c55e" />
+  <text x="300" y="26" fill="#34d399" font-size="12" font-family="'JetBrains Mono', monospace" text-anchor="middle">🗄️ SmartStore DB - MySQL v8.0 &amp; Python Engine</text>
+
+  <!-- Query Box -->
+  <rect x="25" y="60" width="550" height="50" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="40" y="82" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12">SELECT p.id, p.name, c.category, p.stock, p.price FROM products p</text>
+  <text x="40" y="100" fill="#a78bfa" font-family="'JetBrains Mono', monospace" font-size="12">JOIN categories c ON p.cat_id = c.id WHERE p.stock &lt; 20 ORDER BY stock ASC;</text>
+
+  <!-- SQL Result Grid -->
+  <rect x="25" y="125" width="550" height="175" rx="8" fill="#1e293b" opacity="0.9" stroke="#334155" stroke-width="1"/>
+  
+  <!-- Table Header -->
+  <rect x="25" y="125" width="550" height="32" rx="8" fill="#334155"/>
+  <text x="45" y="146" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif">SKU</text>
+  <text x="120" y="146" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif">PRODUCT NAME</text>
+  <text x="270" y="146" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif">CATEGORY</text>
+  <text x="390" y="146" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif">STOCK</text>
+  <text x="480" y="146" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif">STATUS</text>
+
+  <!-- Row 1 -->
+  <text x="45" y="180" fill="#94a3b8" font-size="11" font-family="sans-serif">#PR-881</text>
+  <text x="120" y="180" fill="#f8fafc" font-size="11" font-family="sans-serif">Logitech MX Master 3S</text>
+  <text x="270" y="180" fill="#94a3b8" font-size="11" font-family="sans-serif">Peripherals</text>
+  <text x="390" y="180" fill="#ef4444" font-weight="bold" font-size="11" font-family="sans-serif">4 units</text>
+  <rect x="475" y="167" width="75" height="18" rx="4" fill="#ef4444" opacity="0.2"/>
+  <text x="512" y="180" fill="#ef4444" font-size="10" font-weight="bold" font-family="sans-serif" text-anchor="middle">CRITICAL</text>
+
+  <!-- Row 2 -->
+  <text x="45" y="215" fill="#94a3b8" font-size="11" font-family="sans-serif">#PR-882</text>
+  <text x="120" y="215" fill="#f8fafc" font-size="11" font-family="sans-serif">Mechanical Keychron K2</text>
+  <text x="270" y="215" fill="#94a3b8" font-size="11" font-family="sans-serif">Hardware</text>
+  <text x="390" y="215" fill="#f59e0b" font-weight="bold" font-size="11" font-family="sans-serif">9 units</text>
+  <rect x="475" y="202" width="75" height="18" rx="4" fill="#f59e0b" opacity="0.2"/>
+  <text x="512" y="215" fill="#f59e0b" font-size="10" font-weight="bold" font-family="sans-serif" text-anchor="middle">LOW STOCK</text>
+
+  <!-- Row 3 -->
+  <text x="45" y="250" fill="#94a3b8" font-size="11" font-family="sans-serif">#PR-883</text>
+  <text x="120" y="250" fill="#f8fafc" font-size="11" font-family="sans-serif">Samsung T7 SSD 1TB</text>
+  <text x="270" y="250" fill="#94a3b8" font-size="11" font-family="sans-serif">Storage</text>
+  <text x="390" y="250" fill="#10b981" font-weight="bold" font-size="11" font-family="sans-serif">18 units</text>
+  <rect x="475" y="237" width="75" height="18" rx="4" fill="#10b981" opacity="0.2"/>
+  <text x="512" y="250" fill="#10b981" font-size="10" font-weight="bold" font-family="sans-serif" text-anchor="middle">ADEQUATE</text>
+
+  <!-- Row 4 -->
+  <text x="45" y="285" fill="#94a3b8" font-size="11" font-family="sans-serif">#PR-884</text>
+  <text x="120" y="285" fill="#f8fafc" font-size="11" font-family="sans-serif">Dell 27" 4K IPS Monitor</text>
+  <text x="270" y="285" fill="#94a3b8" font-size="11" font-family="sans-serif">Displays</text>
+  <text x="390" y="285" fill="#f59e0b" font-weight="bold" font-size="11" font-family="sans-serif">6 units</text>
+  <rect x="475" y="272" width="75" height="18" rx="4" fill="#f59e0b" opacity="0.2"/>
+  <text x="512" y="285" fill="#f59e0b" font-size="10" font-weight="bold" font-family="sans-serif" text-anchor="middle">LOW STOCK</text>
+
+  <!-- Bottom Metric Bar -->
+  <text x="30" y="335" fill="#64748b" font-size="12" font-family="sans-serif">Rows returned: 4 in 0.0024s • Connected: localhost:3306 [kapish_store_db]</text>
+  <rect x="470" y="318" width="105" height="26" rx="6" fill="#10b981"/>
+  <text x="522" y="335" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="middle">Export CSV</text>
+</svg>
+

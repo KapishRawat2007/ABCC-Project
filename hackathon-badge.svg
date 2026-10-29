@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+    <linearGradient id="metal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circular ring glow -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="url(#shield-grad)" stroke-width="3" stroke-dasharray="10 6" opacity="0.5"/>
+  <circle cx="200" cy="200" r="160" fill="url(#metal-grad)" stroke="#334155" stroke-width="4"/>
+
+  <!-- Shield Shape -->
+  <path d="M 200 65 L 290 105 C 290 220 200 290 200 310 C 200 290 110 220 110 105 Z" 
+        fill="url(#shield-grad)" opacity="0.9" stroke="#60a5fa" stroke-width="3"/>
+
+  <!-- Inner Shield Trim -->
+  <path d="M 200 80 L 275 115 C 275 210 200 270 200 288 C 200 270 125 210 125 115 Z" 
+        fill="#0f172a" stroke="url(#gold-grad)" stroke-width="2"/>
+
+  <!-- Trophy Icon in the center -->
+  <path d="M 170 130 H 230 V 165 C 230 185 215 200 200 200 C 185 200 170 185 170 165 Z" fill="url(#gold-grad)" />
+  <!-- Trophy Handles -->
+  <path d="M 170 135 H 155 C 145 135 145 160 160 165 L 170 165" fill="none" stroke="url(#gold-grad)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 230 135 H 245 C 255 135 255 160 240 165 L 230 165" fill="none" stroke="url(#gold-grad)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Trophy Stem and Base -->
+  <rect x="195" y="200" width="10" height="25" fill="url(#gold-grad)"/>
+  <path d="M 175 225 H 225 L 230 235 H 170 Z" fill="url(#gold-grad)"/>
+
+  <!-- Sparkles / Stars -->
+  <polygon points="200,105 204,115 215,115 206,122 210,132 200,126 190,132 194,122 185,115 196,115" fill="#ffffff" />
+  
+  <!-- Banner on bottom -->
+  <rect x="90" y="325" width="220" height="36" rx="18" fill="url(#shield-grad)" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="200" y="348" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="800" letter-spacing="1.5" text-anchor="middle">HACKATHON '25</text>
+  
+  <text x="200" y="265" fill="#f8fafc" font-size="13" font-family="sans-serif" font-weight="bold" text-anchor="middle">SPRINT INNOVATOR</text>
+  <text x="200" y="280" fill="#94a3b8" font-size="9" font-family="sans-serif" text-anchor="middle">24-HOUR PROTOTYPING</text>
+</svg>
+

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3-sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="p3-sun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="600" height="380" rx="16" fill="url(#p3-sky)"/>
+  
+  <!-- Subtle Clouds -->
+  <circle cx="120" cy="110" r="45" fill="#ffffff" opacity="0.2" />
+  <circle cx="160" cy="90" r="60" fill="#ffffff" opacity="0.3" />
+  <circle cx="210" cy="110" r="45" fill="#ffffff" opacity="0.2" />
+  
+  <circle cx="480" cy="90" r="50" fill="url(#p3-sun)" filter="drop-shadow(0px 0px 20px #f59e0b)"/>
+
+  <!-- Main Glass Container -->
+  <rect x="40" y="50" width="520" height="290" rx="20" fill="url(#glass)" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.4"/>
+  
+  <!-- Header Bar -->
+  <text x="75" y="90" fill="#ffffff" font-size="22" font-family="sans-serif" font-weight="bold">WeatherLens</text>
+  <rect x="230" y="70" width="180" height="32" rx="16" fill="#0f172a" opacity="0.4" stroke="#ffffff" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="280" y="91" fill="#e2e8f0" font-size="12" font-family="sans-serif">🔍 Search City...</text>
+  <text x="490" y="91" fill="#38bdf8" font-size="12" font-family="sans-serif">📍 New Delhi</text>
+
+  <!-- Big Temperature -->
+  <text x="75" y="180" fill="#ffffff" font-size="64" font-family="sans-serif" font-weight="800">27°C</text>
+  <text x="75" y="210" fill="#bae6fd" font-size="16" font-family="sans-serif">Partly Sunny • Humidity 48% • Wind 12 km/h</text>
+
+  <!-- 4 Day Forecast Mini Glass Cards -->
+  <g transform="translate(75, 235)">
+    <!-- Day 1 -->
+    <rect x="0" y="0" width="100" height="85" rx="12" fill="#0f172a" opacity="0.3" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="50" y="24" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">MON</text>
+    <circle cx="50" cy="45" r="12" fill="#fbbf24"/>
+    <text x="50" y="72" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="bold" text-anchor="middle">28° / 19°</text>
+
+    <!-- Day 2 -->
+    <rect x="115" y="0" width="100" height="85" rx="12" fill="#0f172a" opacity="0.3" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="165" y="24" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">TUE</text>
+    <circle cx="165" cy="45" r="12" fill="#38bdf8"/>
+    <text x="165" y="72" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="bold" text-anchor="middle">24° / 17°</text>
+
+    <!-- Day 3 -->
+    <rect x="230" y="0" width="100" height="85" rx="12" fill="#0f172a" opacity="0.3" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="280" y="24" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">WED</text>
+    <circle cx="280" cy="45" r="12" fill="#fbbf24"/>
+    <text x="280" y="72" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="bold" text-anchor="middle">29° / 20°</text>
+
+    <!-- Day 4 -->
+    <rect x="345" y="0" width="100" height="85" rx="12" fill="#0f172a" opacity="0.3" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="395" y="24" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">THU</text>
+    <circle cx="395" cy="45" r="12" fill="#fb923c"/>
+    <text x="395" y="72" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="bold" text-anchor="middle">30° / 21°</text>
+  </g>
+</svg>
+

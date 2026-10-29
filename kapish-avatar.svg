@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Glow Ring -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#glow-grad)" stroke-width="4" stroke-dasharray="8 6" opacity="0.6"/>
+  <circle cx="200" cy="200" r="170" fill="#0f172a" stroke="url(#bg-grad)" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Background Grid & Code Symbols -->
+  <g opacity="0.15" stroke="#94a3b8" stroke-width="1">
+    <path d="M 50 200 H 350 M 200 50 V 350" />
+    <circle cx="200" cy="200" r="120" fill="none" />
+  </g>
+  <text x="70" y="110" fill="#06b6d4" opacity="0.4" font-family="monospace" font-size="20">&lt;/&gt;</text>
+  <text x="310" y="110" fill="#818cf8" opacity="0.4" font-family="monospace" font-size="18">0101</text>
+  <text x="60" y="290" fill="#3b82f6" opacity="0.4" font-family="monospace" font-size="16">C++</text>
+  <text x="310" y="290" fill="#10b981" opacity="0.4" font-family="monospace" font-size="16">SQL</text>
+
+  <!-- Person Body / Hoodie -->
+  <path d="M 100 370 C 100 290 140 260 200 260 C 260 260 300 290 300 370 Z" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <path d="M 130 370 C 130 300 160 275 200 275 C 240 275 270 300 270 370 Z" fill="#334155" />
+  <path d="M 180 370 L 195 300 L 205 300 L 220 370 Z" fill="#0f172a" />
+  
+  <!-- Modern Tech Badge on Hoodie -->
+  <rect x="180" y="320" width="40" height="24" rx="6" fill="#0ea5e9" opacity="0.9" />
+  <text x="200" y="337" fill="#ffffff" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">&lt;KR&gt;</text>
+
+  <!-- Neck & Face -->
+  <rect x="182" y="220" width="36" height="45" rx="6" fill="#fcd34d" />
+  <path d="M 140 160 C 140 235 260 235 260 160 C 260 100 140 100 140 160 Z" fill="#fde68a" />
+  
+  <!-- Stylish Modern Hair -->
+  <path d="M 135 155 C 130 95 190 75 255 90 C 265 110 265 140 260 150 C 245 130 230 120 200 120 C 170 120 150 135 135 155 Z" fill="#0f172a" />
+  <path d="M 145 100 Q 185 65 240 85 Q 210 65 160 85 Z" fill="#312e81" />
+
+  <!-- Modern Glasses -->
+  <rect x="155" y="145" width="38" height="24" rx="8" fill="none" stroke="#06b6d4" stroke-width="4" />
+  <rect x="207" y="145" width="38" height="24" rx="8" fill="none" stroke="#06b6d4" stroke-width="4" />
+  <line x1="193" y1="157" x2="207" y2="157" stroke="#06b6d4" stroke-width="4" />
+  <!-- Glass reflection -->
+  <line x1="160" y1="162" x2="175" y2="150" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+  <line x1="212" y1="162" x2="227" y2="150" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+
+  <!-- Eyes & Smile -->
+  <circle cx="174" cy="157" r="4" fill="#0f172a" />
+  <circle cx="226" cy="157" r="4" fill="#0f172a" />
+  <path d="M 185 190 Q 200 205 215 190" fill="none" stroke="#b45309" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Modern Developer Headphone Over Ears -->
+  <path d="M 130 165 C 120 165 120 135 130 135 C 135 135 138 145 138 150 Z" fill="#6366f1" />
+  <path d="M 270 165 C 280 165 280 135 270 135 C 265 135 262 145 262 150 Z" fill="#6366f1" />
+  <path d="M 130 140 C 130 70 270 70 270 140" fill="none" stroke="#6366f1" stroke-width="8" stroke-linecap="round" opacity="0.9" />
+
+  <!-- Code Particle Dots -->
+  <circle cx="100" cy="180" r="3" fill="#38bdf8" />
+  <circle cx="300" cy="180" r="4" fill="#818cf8" />
+  <circle cx="200" cy="50" r="3" fill="#a855f7" />
+</svg>
+

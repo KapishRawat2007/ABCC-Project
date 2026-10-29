@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="600" height="380" rx="16" fill="url(#p2-bg)"/>
+  
+  <!-- Terminal Top Bar -->
+  <rect x="0" y="0" width="600" height="42" rx="16" fill="#1e293b"/>
+  <rect x="0" y="30" width="600" height="12" fill="#1e293b"/>
+  <circle cx="24" cy="21" r="6" fill="#ef4444" />
+  <circle cx="44" cy="21" r="6" fill="#eab308" />
+  <circle cx="64" cy="21" r="6" fill="#22c55e" />
+  <text x="300" y="26" fill="#38bdf8" font-size="12" font-family="'JetBrains Mono', monospace" text-anchor="middle">⚡ NovaBank_Core v2.4 [C++20 / g++ -O3]</text>
+
+  <!-- Terminal Body -->
+  <g font-family="'JetBrains Mono', monospace" font-size="13">
+    <text x="30" y="75" fill="#10b981">kapish@system:~/novabank$</text>
+    <text x="240" y="75" fill="#f8fafc">./bin/novabank_engine --bench</text>
+
+    <text x="30" y="105" fill="#38bdf8">[+] Initializing NovaBank Transaction Ledger v2.4...</text>
+    <text x="30" y="130" fill="#94a3b8">[+] Memory Buffer Allocated: 64MB | Data Structure: Red-Black Balanced Tree</text>
+    <text x="30" y="155" fill="#94a3b8">[+] Binary File Persistence: accounts.dat loaded (1,450 verified records)</text>
+
+    <!-- Box table -->
+    <rect x="30" y="175" width="540" height="135" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <text x="50" y="200" fill="#f59e0b" font-weight="bold">ID</text>
+    <text x="130" y="200" fill="#f59e0b" font-weight="bold">ACCOUNT HOLDER</text>
+    <text x="310" y="200" fill="#f59e0b" font-weight="bold">TYPE</text>
+    <text x="420" y="200" fill="#f59e0b" font-weight="bold">BALANCE</text>
+    <line x1="45" y1="210" x2="555" y2="210" stroke="#334155" stroke-width="1"/>
+    
+    <text x="50" y="235" fill="#94a3b8">#10021</text>
+    <text x="130" y="235" fill="#f8fafc">Kapish Rawat</text>
+    <text x="310" y="235" fill="#06b6d4">PREMIUM SAVINGS</text>
+    <text x="420" y="235" fill="#10b981">$ 48,250.00</text>
+
+    <text x="50" y="265" fill="#94a3b8">#10022</text>
+    <text x="130" y="265" fill="#f8fafc">Devika Sharma</text>
+    <text x="310" y="265" fill="#818cf8">CHECKING</text>
+    <text x="420" y="265" fill="#10b981">$ 12,490.50</text>
+
+    <text x="50" y="295" fill="#94a3b8">#10023</text>
+    <text x="130" y="295" fill="#f8fafc">Arjun Malhotra</text>
+    <text x="310" y="295" fill="#06b6d4">INVESTMENT</text>
+    <text x="420" y="295" fill="#10b981">$ 93,120.00</text>
+
+    <!-- Cursor -->
+    <text x="30" y="345" fill="#10b981">kapish@system:~/novabank$</text>
+    <rect x="245" y="333" width="9" height="15" fill="#38bdf8" opacity="0.8"/>
+  </g>
+</svg>
+
